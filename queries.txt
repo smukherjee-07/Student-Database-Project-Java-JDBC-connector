@@ -1,0 +1,40 @@
+-- 1. Show all students
+SELECT * FROM student;
+
+-- 2. Students scoring 90 or above
+SELECT * FROM student
+WHERE marks >= 90;
+
+-- 3. Students scoring below 90
+SELECT * FROM student
+WHERE marks < 90;
+
+-- 4. Students from CSE AIML
+SELECT * FROM student
+WHERE course = 'CSE AIML';
+
+-- 5. Students in Semester 3
+SELECT * FROM student
+WHERE semester = 3;
+
+-- 6. Students scoring between 85 and 92
+SELECT * FROM student
+WHERE marks BETWEEN 85 AND 92;
+
+-- 7. Students whose name contains "Aryan"
+SELECT * FROM student
+WHERE name LIKE '%Aryan%';
+
+-- 8. Students with registration numbers starting with "24"
+SELECT * FROM student
+WHERE reg_no LIKE '24%';
+
+-- 9. CSE AIML students scoring 90 or above
+SELECT * FROM student
+WHERE course = 'CSE AIML'
+AND marks >= 90;
+
+-- 10. Semester 3 students scoring above 85
+SELECT * FROM student
+WHERE semester = 3
+AND marks > 85;
